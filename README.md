@@ -1,3 +1,10 @@
+# Using (useNavigation) hook in non-react components #
+In earlier versions of React and react-router-dom, developers had access to a history object in the router. This history object provided a history.push() method, which was used to navigate users to different routes. This method was particularly useful when developers needed to initiate navigation from non-React components, such as TypeScript files. However, this approach is no longer supported in the latest versions of React and react-router-dom.
+
+The newer versions of these libraries introduced a concept called hooks, one of which is the useNavigate hook. As per the design, hooks are intended to be used within React components.
+
+In this project, we’ve devised a workaround to use hooks in non-React components. We’ve created a middleware that mimics a React component for the hook and exposes its functionalities. This allows us to leverage the power of hooks even in non-React components. Please note that this is a workaround and may not align with standard best practices. It’s always recommended to structure your application in a way that all navigation happens within React components. However, this solution can be beneficial in certain scenarios where that’s not possible. Use this approach judiciously.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
