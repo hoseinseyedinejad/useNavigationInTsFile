@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-
+//Expose the navigation to the window as a global feature
 declare global{
     interface Window {
         myNavigate: (path: string) => void;
